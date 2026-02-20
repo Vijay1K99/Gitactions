@@ -1,0 +1,21 @@
+name: Math Demo
+
+on: push
+
+jobs:
+  math:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Numbers
+        run: |
+          a=10
+          b=20
+          sum=$((a+b))
+          echo "Sum is $sum"
+
+      - name: Multiply Numbers
+        run: |
+          x=5
+          y=6
+          result=$((x*y))
+          echo "Multiplication result is $result"

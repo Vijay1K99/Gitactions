@@ -1,0 +1,16 @@
+name: System Info
+
+on: push
+
+jobs:
+  system:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Date
+        run: date
+
+      - name: Print Working Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
